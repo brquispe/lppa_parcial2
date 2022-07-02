@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <header id="navbar"></header>
+    <main class="container form_container">
+      <form id="frmLogin" method="POST" novalidate>
+        <div class="form">
+          <h1>Iniciá sesión</h1>
+          <div class="form-control">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" data-rules="required: true, type: email">
+            <div class="error">
+              <p class="errorMessage"></p>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" data-rules="required">
+            <div class="error">
+              <p class="errorMessage"></p>
+            </div>
+          </div>
+          <button type="submit" title="Ingresar" class="btn">Ingresar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="desktop_footer">
+      <section>
+        <h5>Conocenos</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Profesionales</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+    </footer>
+
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/navbar.js"></script>
+  </body>
+</html>
